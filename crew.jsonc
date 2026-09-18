@@ -1,0 +1,21 @@
+{
+  "name": "Indian Stock Market Crew",
+  "agents": ["financial_analyst", "technical_analyst"],
+  "tasks": [
+    {
+      "name": "fundamental_financial_task",
+      "description": "Evaluate the financial health, balance sheets, cash flow, quarterly YoY growth, and fundamentals of the Indian stock '{stock_symbol}'. Fetch the stock's financial data and analyze its intrinsic valuation, profit margins, debt ratios, and earnings growth to formulate long-term investment options.",
+      "expected_output": "A structured fundamental analysis report detailing: 1. Company Profile & Industry position, 2. Financial Strengths (Margins, Cash flows, ROE), 3. Potential fundamental warning signs (e.g. debt levels), 4. Valuation evaluation (P/E, P/B relative to peers), and 5. A clear Long-term Investment Outlook (Buy/Hold/Avoid) with a target investment horizon.",
+      "agent": "financial_analyst"
+    },
+    {
+      "name": "technical_momentum_task",
+      "description": "Analyze the technical momentum, moving averages (50-day and 200-day), support and resistance zones, volume, and recent price action of the Indian stock '{stock_symbol}'. Fetch the technical data and use recent trading days to formulate short-term trading setups.",
+      "expected_output": "A structured technical analysis report detailing: 1. Current trend direction & trend strength (Bullish/Bearish/Consolidating), 2. Position relative to 50-day and 200-day moving averages, 3. Critical Support & Resistance price zones, 4. Recent volume analysis, and 5. A precise short-term trading suggestion including buy entry range, short-term targets, and a strict stop-loss price.",
+      "agent": "technical_analyst"
+    }
+  ],
+  "process": "sequential",
+  "verbose": true,
+  "memory": true
+}
