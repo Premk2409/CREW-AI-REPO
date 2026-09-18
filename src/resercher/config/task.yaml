@@ -1,0 +1,59 @@
+research_task:
+  description: >
+    Research the latest developments in {topic} during {month} {year}.
+
+    Find relevant research papers and analyze:
+    - Research problem
+    - Methodology
+    - Dataset
+    - Results
+    - Limitations
+    - Research gaps
+    - Potential future research
+
+  expected_output: >
+    A structured research report containing important papers,
+    trends, research gaps, and proposed research directions.
+
+  agent: researcher
+
+
+analysis_task:
+  description: >
+    Analyze the researcher's findings.
+
+    Compare the identified approaches and summarize:
+    - Performance
+    - Methodology
+    - Strengths
+    - Limitations
+    - Research trends
+    - Potential opportunities
+
+  expected_output: >
+    A structured analytical report with comparisons,
+    findings, and actionable research insights.
+
+  agent: reporting_analyst
+
+
+review_task:
+  description: >
+    Critically review the research and analysis.
+
+    Check:
+    - Evidence quality
+    - Methodology
+    - Research gap
+    - Novelty
+    - Experimental validity
+    - Reproducibility
+    - Unsupported claims
+    - Missing experiments
+    - Limitations
+
+  expected_output: >
+    A detailed research review identifying critical issues,
+    required improvements, and publication readiness.
+
+  agent: research_reviewer

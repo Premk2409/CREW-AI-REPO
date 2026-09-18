@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment files with secrets
+.env
+.env.*
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Gradio / local logs
+*.log
+report.md
